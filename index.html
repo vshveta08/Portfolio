@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <!-- Navbar -->
+        <nav class="nav">
+            <div class="logo"><a href="">Portfolio</a></div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <nav class="hamburger-nav">
+            <div class="logo"><a href="">Portfolio</a></div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Profile Section -->
+        <section class="profile">
+            <div class="pic">
+                <img src="./assets/me.png" alt="">
+            </div>
+            <div class="section_content">
+                <p id="text-p1">Hello, I'm</p>
+                <h1 id="title">Shveta Verma</h1>
+                <p id="text-p2">Frontend Developer</p>
+                <div class="btn-container">
+                    <button onclick="window.open('./assets/SV_Resume.pdf')">Download CV</button>
+                    <button onclick="location.href='./#contact'">Contact Info</button>
+                </div>
+                <div class="social-container">
+                    <a href="https://www.linkedin.com/in/shveta-verma-405585212" target="_blank"><img src="./assets/linkedin.png" alt=""></a>
+                    <a href="https://github.com/vshveta08" target="_blank"><img src="./assets/github.png" alt=""></a>
+                </div>
+            </div>
+        </section>
+
+        <div class="border1"></div>
+        <!-- About Section -->
+        <section id="about">
+            <p id="text-p1">Get To Know More</p>
+            <h1 id="title">About Me</h1>
+            <div class="details-container">
+                <div class="about-details">
+                    <p>Hello and welcome to my portfolio!</p>
+                    <p>I am a recent graduate with a degree in Computer Science and Engineering, eager to embark on a journey into the dynamic and ever-evolving world of web development. As a fresher, I bring a fresh perspective, a hunger for knowledge, and an insatiable enthusiasm for learning to the field.</p>
+                </div>
+                <div class="about-extradetails">
+                    <div class="extradetails">
+                        <div>
+                            <img class="icon" src="./assets/experience.png" alt="">
+                        </div>
+                        <h3>Experience</h3>
+                        <p>Web Developer Intern</p>
+                    </div>
+                    <div class="extradetails">
+                        <div>
+                            <img class="icon" src="./assets/education.png" alt="">
+                        </div>
+                        <h3>Education</h3>
+                        <p>BE in Computer Science</p>
+                    </div>
+                </div>
+                
+            </div>
+            <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
+                onclick="location.href='./#skills'" >
+
+        </section>
+
+        <div class="border2"></div>
+        <!-- Skills Section -->
+        <section id="skills">
+            <p id="text-p1">Explore My</p>
+            <h1 id="title">Technical Skills</h1>
+
+            <div class="skills-container">
+                <div class="article-container">
+                    <article>
+                       <img class="skill-icon" src="./assets/html-5.png" alt="">
+                       <h3>HTML</h3>
+                    </article>
+                    <article>
+                        <img class="skill-icon" src="./assets/css-3.png" alt="">
+                        <h3>CSS</h3>
+                    </article>
+                    <article>
+                        <img class="skill-icon" src="./assets/javascript.png" alt="">
+                        <h3>JavaScript</h3>
+                    </article>
+                </div>
+                <div class="article-container">
+                    <article>
+                        <img class="skill-icon" src="./assets/react.png" alt="">
+                        <h3>React</h3>
+                    </article>
+                    <article>
+                        <img class="skill-icon" src="./assets/Tailwind CSS.png" alt="">
+                        <h3>Tailwind</h3>
+                    </article>
+                    <article>
+                        <img class="skill-icon" src="./assets/c++.png" alt="">
+                        <h3>C++</h3>
+                    </article>
+                </div>
+            </div>
+            <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
+                onclick="location.href='./#projects'" >
+        </section>
+
+        <div class="border3"></div>
+        <!-- Projects section -->
+        <section id="projects">
+            <p id="text-p1">Browse My</p>
+            <h1 id="title">Projects</h1>
+            <div class="projects-content">
+                <div class="projects-content-div">
+                    <div class="projects-container">
+                        <div class="projectImg-container first">
+                            <div class="hover-effect"> 
+                                PROJECT 1
+                            </div>
+                        </div>
+                        <!-- <div class="projectImg-container">
+                            <img src="./assets/project-1.png" alt="project1" class="project-img">
+                        </div> -->
+                        <h2 class="project-title">Random Password Generator</h2>
+                        <div class="project-desc">
+                            <p><b>Used Technologies :</b> HTML, CSS, JavaScript</p> 
+                        </div>
+                        <div class="btn-container">
+                            <button
+                                class="project btn"
+                                onclick="location.href='https://github.com/vshveta08/Random-Password-Generator' "
+                            >
+                                Github
+                            </button>
+                            <button
+                                class="project btn"
+                                onclick="location.href='https://vshveta08.github.io/Random-Password-Generator/'"
+                            >
+                                Live Demo
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="projects-container">
+                        <div class="projectImg-container second">
+                            <div class="hover-effect"> 
+                                PROJECT 2
+                            </div>
+                        </div>
+                        <!-- <div class="projectImg-container">
+                            <img src="./assets/project-2.png" alt="project1" class="project-img">
+                        </div> -->
+                        <h2 class="project-title">Text Analyzer</h2>
+                        <div class="project-desc">
+                            <p><b>Used Technologies :</b> React JS</p> 
+                        </div>
+                        <div class="btn-container">
+                            <button
+                                class="project btn"
+                                onclick="location.href='https://github.com/vshveta08/Text-Analyzer' "
+                            >
+                                Github
+                            </button>
+                            <button
+                                class="project btn"
+                                onclick="location.href='https://vshveta08.github.io/Text-Analyzer/'"
+                            >
+                                Live Demo
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projects-content-div">
+                    <div class="projects-container">
+                        <div class="projectImg-container third">
+                            <div class="hover-effect"> 
+                                PROJECT 3
+                            </div>
+                        </div>
+                        <!-- <div class="projectImg-container">
+                            <img src="./assets/project-2.png" alt="project1" class="project-img">
+                        </div> -->
+                        <h2 class="project-title">Live HTML Interpreter</h2>
+                        <div class="project-desc">
+                            <p><b>Used Technologies :</b> HTML, CSS, JavaScript</p> 
+                        </div>
+                        <div class="btn-container">
+                            <button
+                                class="project btn"
+                                onclick="location.href='https://github.com/vshveta08/Live-HTML-Interpreter' "
+                            >
+                                Github
+                            </button>
+                            <button
+                                class="project btn"
+                                onclick="location.href='https://vshveta08.github.io/Live-HTML-Interpreter/'"
+                            >
+                                Live Demo
+                            </button>
+                        </div>
+                    </div>
+                    <div class="projects-container">
+                        <div class="projectImg-container fourth">
+                            <div class="hover-effect"> 
+                                PROJECT 4
+                            </div>
+                        </div>
+                        <!-- <div class="projectImg-container">
+                            <img src="./assets/project-2.png" alt="project1" class="project-img">
+                        </div> -->
+                        <h2 class="project-title">Temperature Converter</h2>
+                        <div class="project-desc">
+                            <p><b>Used Technologies :</b> HTML, CSS, JavaScript</p> 
+                        </div>
+                        <div class="btn-container">
+                            <button
+                                class="project btn"
+                                onclick="location.href='https://github.com/vshveta08/Temperature-Converter' "
+                            >
+                                Github
+                            </button>
+                            <button
+                                class="project btn"
+                                onclick="location.href='https://vshveta08.github.io/Temperature-Converter/'"
+                            >
+                                Live Demo
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <img src="./assets/arrow.png" alt="Arrow icon" class="icon project-arrow"
+                    onclick="location.href='./#contact'" >
+            
+        </section>
+
+        <div class="border4"></div>
+        <!-- Contact Section -->
+        <section id="contact">
+            <p id="text-p1">Get in Touch</p>
+            <h1 id="title">Contact Me</h1>
+            <div class="contact-details">
+                <div class="contact-details-container">
+                    <img src="./assets/email.png" alt="" class="icon">
+                    <p><a href="mailto:vshveta08@gmail.com" target="_blank">Email</a></p>
+                </div>
+                <div class="contact-details-container">
+                    <img src="./assets/linkedin.png" alt="" class="icon">
+                    <p><a href="https://www.linkedin.com/in/shveta-verma-405585212/" target="_blank">LinkedIn</a></p>
+                </div>
+            </div>
+
+            <p id="footer">✧･ﾟ: ✧･ﾟ: Created by Shveta Verma :･ﾟ✧:･ﾟ✧</p>
+        </section>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
